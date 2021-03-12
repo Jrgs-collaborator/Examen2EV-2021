@@ -36,7 +36,7 @@ namespace Ejercicio10
             double euros, dolares;
 
             euros = double.Parse(tImporte.Text);
-            dolares = euros * CONV1;
+            dolares = euros / CONV1;
 
             tResultado.Text = dolares.ToString();
         }
@@ -46,7 +46,7 @@ namespace Ejercicio10
             double euros, libras;
 
             libras = double.Parse(tImporte.Text);
-            euros = libras * CONV1;
+            euros = libras * CONV2;
 
             tResultado.Text = euros.ToString();
         }
@@ -55,10 +55,10 @@ namespace Ejercicio10
         {
             double euros, libras;
 
-            euros = double.Parse(tResultado.Text);
-            libras = euros / CONV1;
+            euros = double.Parse(tImporte.Text);
+            libras = euros / CONV2;
 
-            tImporte.Text = libras.ToString();
+            tResultado.Text = libras.ToString();
         }
     }
 }
